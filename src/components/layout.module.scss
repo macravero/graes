@@ -1,0 +1,14 @@
+@import '../styles/variables';
+.container{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: $main-font;
+  color: $texto-main;
+}
+
+.content{
+  flex-grow: 1;
+  margin-bottom: 4rem;
+}

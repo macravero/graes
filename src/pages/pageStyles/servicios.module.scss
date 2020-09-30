@@ -1,0 +1,68 @@
+@import '../../styles//variables';
+
+.container{
+  & p{
+    font-size: 14px;
+  }
+  & h2{
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: 'Tillium', sans-serif;
+    color: #333333;
+  }  
+  & a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #A60816;
+    & span{
+      font-size: .9rem;
+    }
+  }
+  & .link{
+    text-decoration: none;
+    color:white;
+    font-weight: 500;
+    background: #A60816;
+    padding: 1rem 3rem;
+    width: 95%;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 1.1rem;
+  }
+  & h1{
+    text-align: center;
+  }
+  & ul{
+      text-align: center;
+      font-family: inherit;
+      font-size: 14px;
+      margin-bottom: 0;
+      & li{
+          margin-bottom: 1rem;
+      }
+  }
+}
+.italic{
+  font-style: italic;
+}
+.justify{
+    text-align: justify;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1.5rem;
+    & img{
+        margin-top: 1.5rem;
+        max-width: 50px;
+    }
+    & img:first-child{
+        margin-top: 0;
+    }
+    img.posterImage{
+        max-width: 100%;
+    }
+}

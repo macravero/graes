@@ -1,0 +1,37 @@
+@import '../styles//variables';
+
+.container{
+  background: white;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  color:#333333;
+  font-size: 10px;
+  font-weight: 600;
+  min-height: 19rem;
+  & ul{
+    list-style: none;
+    & li{
+      margin: 0;
+      & a{
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
+  & img{
+    max-width: 100px;
+    align-self: flex-start;
+    margin-top: 2rem;
+  }
+  & .infoContainer{
+    align-self: flex-end;
+    margin-bottom: 7rem;
+    padding-right: 1rem;
+    & p{
+      margin: 0;
+    }
+  }
+}
