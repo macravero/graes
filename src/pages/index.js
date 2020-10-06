@@ -10,6 +10,8 @@ import Causas from '../images/causas.png'
 import NuestrosServicios from '../images/nuestros-servicios.png'
 import RespuestaCovidFondo from '../images/respuesta-covid-fondo.jpg'
 import RespuestaCovid from '../images/respuesta-covid.png'
+import OpenQuote from '../images/abre-comas.png'
+import CloseQuote from '../images/cierre-comas.png'
 
 
 const IndexPage = () => (
@@ -19,14 +21,16 @@ const IndexPage = () => (
     <div className={styles.container}>
       {/* First section */}
       <div className={styles.sectionOne}>
+        <img src={OpenQuote} alt=""/>
         <blockquote>Las emergencias son impredecibles y amenazan la integridad de millones de personas vulnerables. ¿Ante los Riesgos y Amenazas? Prevención y cuidadosa planificación. ¿Ante el Desastre? Liderazgo y rapidez para salvar vidas. ¿Ante la Injusticia? Convicción y firmeza para su corrección y erradicación.</blockquote>
+        <img src={CloseQuote} alt=""className={styles.closeQuote}/>
         <h1>SOMOS EL GRUPO DE RESPUESTA Y ASISTENCIA EN EMERGENCIAS SOCIALES. <strong>SOMOS GRAES.</strong></h1>
       </div>
       {/* Second section */}
       <div className={styles.sectionTwo}>
         <img src={QuienesSomos} alt="quienes somos"/>
         <h2>¿QUIÉNES SOMOS?</h2>
-        <p>Somos una empresa española de vanguardia, de consultoría internacional, dedicada al diseño y desarrollo de proyectos sostenibles de Prevención, Gestión y Control de Emergencias Sociales, con alto impacto para <br/> poblaciones vulnerables.</p>
+        <p>Somos una empresa española de vanguardia, de consultoría internacional, dedicada al diseño y desarrollo de proyectos sostenibles de Prevención, Gestión y Control de Emergencias Sociales, con alto impacto para poblaciones vulnerables.</p>
         <Link to='/nosotros' className={styles.link}>CONÓZCANOS</Link>
       </div>
       <div className={styles.sectionThree}>

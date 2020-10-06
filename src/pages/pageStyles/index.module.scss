@@ -32,29 +32,39 @@
   font-style: italic;
 }
 .sectionOne{
-  padding: 1.5rem;
+  padding: 24px;
   max-width: 1024px;
   margin: 0 auto;
   background-image: url('../../images/index-bg.jpg');
   padding-bottom: 4rem;
+  & img{
+    margin: 0;
+    width: 25px;
+  }
+  & img.closeQuote{
+    float: right;
+  }
 }
 .sectionOne blockquote{
   font-style: italic;
   color: white;
   text-align: center;
-  line-height: 2.2rem;
-  font-size: .9rem;
+  line-height: 30px;
+  font-size: 14px;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
 }
 .sectionOne h1{
   color: white;
-  font-weight: 600;
+  font-weight: 500;
   border-bottom: none;
-  font-size: 1.3rem;
-  line-height: 2rem;
-  font-family: 'Tillium', sans-serif;
+  font-size: 19px;
+  line-height: 30px;
+  font-family: 'Lato', sans-serif;
+  margin-top: 5rem;
 }
 .sectionTwo{
-  padding: 1.5rem;
+  padding: 24px;
   padding-top: 2rem;
   padding-bottom: 4rem;
   display: flex;
@@ -68,27 +78,32 @@
     color:white;
     font-weight: 500;
     background: #A60816;
-    padding: 1rem 3rem;
-    width: 95%;
+    padding: 12px 3rem;
+    width: 100%;
     text-align: center;
-    border-radius: 4px;
-    font-size: 1.1rem;
+    border-radius: 2px;
+    font-size: 19px;
+    font-family: 'Tillium', sans-serif;
+    letter-spacing: 1px;
+
   }
   & h2{
-    font-size: 1.4rem;
+    font-size: 19px;
     font-weight: 600;
+    line-height: 30px;
     font-family: 'Tillium', sans-serif;
   }
   & p{
-    font-size: 13.4px;
+    font-size: 12px;
     text-align: center;
+    line-height: 24px;
   }
   & img{
-    max-width: 50px;
+    max-width: 40px;
   }
 }
 .sectionThree{
-  padding: 1.5rem;
+  padding: 24px;
   padding-top: 2rem;
   background-color: $azul;
   display: flex;
@@ -101,17 +116,20 @@
   background-position: center;
 
   & h2{
-    color: #6e0000;
+    color: #A60816;
     text-align: center;
     font-weight: 600;
     font-family: 'Tillium', sans-serif;
-    font-size: 1.4rem;
+    font-size: 19px;
   }
-
+  & img{
+    max-width: 40px;
+  }
   & a{
     text-decoration: none;
     font-weight: bold;
-    color: #6e0000;
+    color: #A60816;
+    font-size: 12px;
     & span{
       font-size: .9rem;
     }
@@ -121,42 +139,45 @@
   max-width: 1024px;
   margin: 0 auto;
   padding-top: 4rem;
-  padding: 1.5rem;
+  padding: 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   & h2{
-    font-size: 1.4rem;
+    font-size: 19px;
+    line-height: 30px;
     font-weight: 600;
     font-family: 'Tillium', sans-serif;
   }
   & p{
     padding-top: 0;
     text-align: center;
-    font-size: .83rem;
-    line-height: 2rem;
+    font-size: 12px;
+    line-height: 24px;
   }
   & .link{
     text-decoration: none;
     color:white;
     font-weight: 600;
     background: #333333;
-    padding: 1rem 3rem;
-    width: 95%;
+    padding: 12px 3rem;
+    width: 100%;
     text-align: center;
-    border-radius: 4px;
-    font-size: 1.1rem;
+    border-radius: 2px;
+    font-size: 19px;
+    font-family: 'Tillium', sans-serif;
+    letter-spacing: 1px;
   }
   & img{
-    max-width: 50px;
+    max-width: 40px;
   }
 }
 .sectionFive{
   max-width: 1024px;
   margin: 0 auto;
   padding-top: 4rem;
-  padding: 1.5rem;
+  padding: 24px;
   padding-bottom: 4rem;
   display: flex;
   flex-direction: column;
@@ -164,7 +185,8 @@
   align-items: center;
   background: #333333;
   & h2{
-    font-size: 1.4rem;
+    font-size: 19px;
+    line-height: 30px;
     font-weight: 600;
     font-family: 'Tillium', sans-serif;
     color: white;
@@ -172,24 +194,24 @@
   & p{
     padding-top: 0;
     text-align: center;
-    font-size: .83rem;
-    line-height: 2rem;
+    font-size: 12px;
+    line-height: 24px;
     color: white;
-    font-weight: 500;
+    font-weight: 300;
   }
   & .link{
     text-decoration: none;
     color:#A60816;
-    font-weight: 700;
     background: white;
-    padding: 1rem 3rem;
-    width: 95%;
+    padding: 12px 3rem;
     text-align: center;
-    border-radius: 4px;
-    font-size: 1.1rem;
+    width: 100%;
+    border-radius: 2px;
+    font-size: 19px;
+    font-family: 'Tillium', sans-serif;
   }
   & img{
-    max-width: 50px;
+    max-width: 40px;
   }
 }
 .sectionSix{
@@ -206,7 +228,8 @@
   align-items: center;
   background: white;
   & h2{
-    font-size: 1.4rem;
+    font-size: 19px;
+    line-height: 30px;
     font-weight: 600;
     font-family: 'Tillium', sans-serif;
     color: #A60816;
@@ -214,23 +237,24 @@
   & p{
     padding-top: 0;
     text-align: center;
-    font-size: .83rem;
-    line-height: 2rem;
+    font-size: 14px;
+    line-height: 24px;
     color: #A60816;
     font-weight: 500;
   }
   & .link{
     text-decoration: none;
     color:white;
-    font-weight: 700;
     background: #A60816;
-    padding: 1rem 3rem;
-    width: 95%;
+    padding: 12px 3rem;
+    width: 100%;
     text-align: center;
-    border-radius: 4px;
-    font-size: 1.1rem;
+    border-radius: 2px;
+    font-size: 19px;
+    font-family: 'Tillium', sans-serif;
+    letter-spacing: 1px;
   }
   & img{
-    max-width: 50px;
+    max-width: 40px;
   }
 }
