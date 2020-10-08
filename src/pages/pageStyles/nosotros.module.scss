@@ -4,6 +4,7 @@
   & p{
     font-size: 12px;
     line-height: 24px;
+    margin: 0;
   }
   & h2{
     font-size: 19px;
@@ -16,6 +17,7 @@
     font-weight: bold;
     color: #A60816;
     font-size: 12px;
+    margin-top: 24px;
     & span{
       font-size: 10px;
     }
@@ -30,6 +32,7 @@
     border-radius: 2px;
     font-size: 19px;
     font-family: 'Tillium', sans-serif;
+    margin-top: 24px;
   }
   & h1{
     text-align: center;
@@ -39,9 +42,9 @@
       font-family: inherit;
       font-size: 12px;
       margin-bottom: 0;
-      & li{
-          margin-bottom: 1rem;
-      }
+  }
+  & > img{
+    margin-bottom: 0;
   }
 }
 .italic{
@@ -66,5 +69,6 @@
     }
     img.posterImage{
         max-width: 100%;
+        margin-bottom: 0;
     }
 }

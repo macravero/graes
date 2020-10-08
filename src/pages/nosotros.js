@@ -28,7 +28,7 @@ const NosotrosPage = () => {
         <Link to='/trayectoria'>Alcance y trayectoria <span>></span></Link>
         <img src={Mision} alt="Mision"/>
         <h2>MISIÓN</h2>
-        <p>Nuestra misión es propiciar el impulso de los Objetivos de Desarrollo Sostenible de Naciones Unidas, con la misión de contribuir a salvar vidas y aliviar sufrimiento en <br/>comunidades con situaciones de crisis y Emergencia Social. Nos especializamos en intervenciones ante estas Emergencias, especialmente en <Link to='/causas'>estos sectores <span>></span></Link></p>
+        <p>Nuestra misión es propiciar el impulso de los Objetivos de Desarrollo Sostenible de Naciones Unidas, con la misión de contribuir a salvar vidas y aliviar sufrimiento en comunidades con situaciones de crisis y Emergencia Social. Nos especializamos en intervenciones ante estas Emergencias, especialmente en <Link to='/causas'>estos sectores <span>></span></Link></p>
         <img src={Vision} alt="Vision"/>
         <h2>VISIÓN</h2>
         <p>GRAES tiene como objetivo la atención y contención de Emergencias Sociales, con profesionalismo independiente, prescindiendo de los factores ideológicos o políticos presentes, en el País o los Países, o en el Gobierno o los Gobiernos, donde se presenta la Emergencia que debe ser atendida.</p>
@@ -39,7 +39,7 @@ const NosotrosPage = () => {
         <img src={Hospital} className={styles.posterImage}  alt="Hospital"/>
         <img src={Soluciones} alt="Soluciones"/>
         <h2>SOLUCIONES A LA MEDIDA</h2>
-        <p className={styles.justify}>Nuestras soluciones se basan en un entendimiento profundo e las causas y la naturaleza de los problemas prevalentes en las comunidades afectadas. </p>
+        <p>Nuestras soluciones se basan en un entendimiento profundo de las causas y la naturaleza de los problemas prevalentes en las comunidades afectadas. </p>
         <ul>
           <li>Entendemos las realidades críticas de comunidades en crisis, de la mano de sus líderes.</li>
           <li> Forjamos alianzas con ONGs especializadas con presencia de nuestros profesionales en el terreno. </li>
@@ -52,7 +52,7 @@ const NosotrosPage = () => {
         <img src={Historia} alt="Historia"/>
         <h2>NUESTRA HISTORIA</h2>
         <p>Los socios fundadores de GRAES, integrados, cuentan con más de dos décadas de trabajo fructífero en la prevención, mitigación y control de Emergencias Sociales en el Mundo. Su trayectoria puso en evidencia las carencias y necesidades de soporte de la sociedad actual. </p>
-        <Link to='/trayectoria'>Vea más <span>></span></Link>
+        <Link to='/historia'>Vea más <span>></span></Link>
       </div>
     </div>
     </Layout>
