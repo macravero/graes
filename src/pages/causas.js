@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './pageStyles/causas.module.scss'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Aliados from '../components/aliados'
 import Objetivos from '../images/objetivos-header.jpg'
 import Causas from '../images/causas-white.png'
 import Catastrofes from '../images/Catastrofes.jpg'
@@ -90,6 +91,7 @@ const CausasPage = () => {
           <p>Apoyamos a autoridades y/o responsables, en el diagnóstico y atención de crisis con refugiados y en otras situaciones de conflictos sociales fronterizos.</p>
         </div>
       </div>
+      <Aliados/>
     </div>
     </Layout>
   )

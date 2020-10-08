@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './pageStyles/covid.module.scss'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Aliados from '../components/aliados'
 import CovidCarousel from '../components/Carousels/CovidCarousel'
 import CovidBanner from '../images/covid-banner.png'
 import RtaCovidLogo from '../images/respuesta-covid.png'
@@ -39,6 +40,7 @@ const CovidResponsePage = () => {
         <h2>Hospital de Campaña junto al Hospital La Fe</h2>
         <iframe title='hospital junto a la fe 2' width="560" height="315" src="https://www.youtube.com/embed/7a_wllHV1lQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
+      <Aliados/>
     </div>
     </Layout>
   )

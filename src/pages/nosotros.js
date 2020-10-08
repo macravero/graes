@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styles from './pageStyles/nosotros.module.scss'
 import Layout from "../components/layout"
+import Aliados from '../components/aliados'
 import SEO from "../components/seo"
 import Nosotros from '../images/nosotros-header.jpg'
 import QuienesSomos from '../images/quienes-somos-gris.png'
@@ -54,6 +55,7 @@ const NosotrosPage = () => {
         <p>Los socios fundadores de GRAES, integrados, cuentan con más de dos décadas de trabajo fructífero en la prevención, mitigación y control de Emergencias Sociales en el Mundo. Su trayectoria puso en evidencia las carencias y necesidades de soporte de la sociedad actual. </p>
         <Link to='/historia'>Vea más <span>></span></Link>
       </div>
+      <Aliados/>
     </div>
     </Layout>
   )

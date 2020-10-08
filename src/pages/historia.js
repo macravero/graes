@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styles from './pageStyles/historia.module.scss'
 import Layout from "../components/layout"
+import Aliados from '../components/aliados'
 import SEO from "../components/seo"
 import Historia from '../images/historia.png'
 import Hospital from '../images/hospital.jpg'
@@ -25,6 +26,7 @@ const HistoriaPage = () => {
         <p>Con el “Know-How” adquirido, en marco de colaboración y prestación de servicios recurrentes con la UME, el Grupo Fundador de GRAES, de manera directa e indirecta, y a través de sus empresas fundadores y aliados estratégicos, ha acumulado experiencias exitosas en la prevención, mitigación, estabilización y normalización de Emergencias Sociales en Europa, Asia, Norteamérica, Suramérica, Centroamérica y El Caribe.</p>
         <Link to='/'><span>&lt;</span> Volver al Home</Link>
       </div>
+      <Aliados/>
     </div>
     </Layout>
   )

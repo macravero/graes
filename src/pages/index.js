@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HomeCarousel from '../components/Carousels/HomeCarousel'
-import AliadosCarousel from '../components/Carousels/AliadosCarousel'
+import Aliados from '../components/aliados'
 import styles from './pageStyles/index.module.scss'
 import QuienesSomos from '../images/quienes-somos.png'
 import Alcance from '../images/alcance.png'
@@ -59,9 +59,8 @@ const IndexPage = () => (
         <p>La crisis global generada por la Pandemia del COVID-19 amenaza a comunidades vulnerables y revierte los logros de desarrollo sostenible. Conozca nuestra respuesta activa y directa en la lucha contra la Pandemia.</p>
         <Link to='/' className={styles.link}>VER IMPACTO</Link>
       </div>
-      <p className={styles.allies}>ALIADOS ESTRATÉGICOS</p>
+      <Aliados/>
     </div>
-    <AliadosCarousel />
   </Layout>
 )
 

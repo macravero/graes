@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './pageStyles/servicios.module.scss'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Aliados from '../components/aliados'
 import NuestrosServiciosBanner from '../images/nuestros-servicios-banner.jpg'
 import NuestrosServicios from '../images/nuestros-servicios-red.png'
 import FabricacionTech from '../images/tecnologias.png'
@@ -99,6 +100,7 @@ const ServiciosPage = () => {
             impacto de la implementación de proyectos sociales.</li>
         </ul>
       </div>
+      <Aliados />
     </div>
     </Layout>
   )
