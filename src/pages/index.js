@@ -59,6 +59,7 @@ const IndexPage = () => (
         <p>La crisis global generada por la Pandemia del COVID-19 amenaza a comunidades vulnerables y revierte los logros de desarrollo sostenible. Conozca nuestra respuesta activa y directa en la lucha contra la Pandemia.</p>
         <Link to='/' className={styles.link}>VER IMPACTO</Link>
       </div>
+      <p className={styles.allies}>ALIADOS ESTRATÉGICOS</p>
     </div>
     <AliadosCarousel />
   </Layout>
