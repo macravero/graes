@@ -2,10 +2,12 @@
 
 .container{
   & p{
-    font-size: 14px;
+    font-size: 12px;
+    line-height: 24px;
   }
   & h2{
-    font-size: 1.4rem;
+    font-size: 19px;
+    line-height: 30px;
     font-weight: 600;
     font-family: 'Tillium', sans-serif;
     color: #333333;
@@ -14,8 +16,9 @@
     text-decoration: none;
     font-weight: bold;
     color: #A60816;
+    font-size: 12px;
     & span{
-      font-size: .9rem;
+      font-size: 10px;
     }
   }
   & .link{
@@ -23,14 +26,15 @@
     color: white;
     font-weight: 500;
     background: #A60816;
-    padding: 1rem 3rem;
+    padding: 10px 3rem;
     text-align: center;
-    border-radius: 4px;
-    font-size: 1.1rem;
+    border-radius: 2px;
+    font-size: 19px;
     align-self: flex-start;
     margin-left: 10%;
     border: none;
     margin-bottom: 2rem;
+    font-family: 'Tillium', sans-serif;
   }
   & h1{
     text-align: center;
@@ -70,13 +74,16 @@
     }
 }
 form{
-    padding-top: 2rem;
+    // padding-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
     background: lightgray;
+    & input:first-child{
+      margin-top: 24px;
+    }
     & input{
         margin-bottom: 1rem;
         padding: .5rem;
@@ -87,11 +94,12 @@ form{
         width: 80%;
         min-height: 15rem;
         margin-bottom: 1.5rem;
+        font-style: italic;
     }
 }
 .flex{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     margin-bottom: 1rem;
     & img{
@@ -101,9 +109,11 @@ form{
     }
     & p{
         margin: 0;
+        font-size: 12px;
     }
 }
 iframe{
-    width: 90%;
-    margin-left: 5%;
+    width: 350px;
+    display: block;
+    margin: 0 auto;
 }

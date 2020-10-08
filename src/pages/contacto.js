@@ -36,7 +36,7 @@ const ContactoPage = () => {
             <p>91 870 00 00 / 91 800 00 00</p>
         </div>
       </div>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.64503995663!2d-3.693701584655294!3d40.438858179362484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228ee0b29ae47%3A0x2015f79230358881!2sPaseo%20de%20la%20Castellana%2C%2057%2C%2028046%20Madrid%2C%20Spain!5e0!3m2!1sen!2sar!4v1601449851535!5m2!1sen!2sar" title="google map" width="600" height="450" frameborder="0" allowfullscreen="" aria-hidden="false"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.64503995663!2d-3.693701584655294!3d40.438858179362484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228ee0b29ae47%3A0x2015f79230358881!2sPaseo%20de%20la%20Castellana%2C%2057%2C%2028046%20Madrid%2C%20Spain!5e0!3m2!1sen!2sar!4v1601449851535!5m2!1sen!2sar" title="google map" frameborder="0" allowfullscreen="" aria-hidden="false"></iframe>
     </div>
     </Layout>
   )
