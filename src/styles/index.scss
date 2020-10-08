@@ -16,6 +16,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.carousel .slide iframe{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-height: 250px;
+}
 article,
 aside,
 details,
