@@ -22,7 +22,7 @@ const ContactoPage = () => {
             <input type="text" placeholder='Nombre:'/>
             <input type="text" placeholder='Apellido:'/>
             <input type="email" placeholder='Email:'/>
-            <input type="tel" placeholder= 'Teléfono'/>
+            <input type="tel" placeholder= 'Teléfono:'/>
             <textarea placeholder='Escriba su mensaje aquí'/>
             <button className={styles.link} type='submit'>ENVIAR</button>
       </form>
