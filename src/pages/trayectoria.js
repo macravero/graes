@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import TrayectoriaBanner from '../images/banner-trayectoria.jpg'
 import Alcance from '../images/alcance.png'
+import Alianzas from '../images/alianzas.png'
 const TrayectoriaPage = () => {
   return (
     <Layout>
@@ -34,6 +35,7 @@ const TrayectoriaPage = () => {
         multilaterales, Gobiernos, ONGs, prestigiosos centros de
         estudio y excelencia, entidades privadas y Think-Tanks, entre
         los cuales destacan:</p>
+      <img src={Alianzas} className={styles.alianzas}alt="Alianzas"/>
       </div>
     </div>
     </Layout>
