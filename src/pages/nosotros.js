@@ -11,7 +11,6 @@ import Vision from '../images/vision.png'
 import Lastimadx from '../images/lastimadx.jpg'
 import Equipo from '../images/equipo.png'
 import Soluciones from '../images/soluciones-a-medida.png'
-import Clientes from '../images/clientes.png'
 import Historia from '../images/historia.png'
 import Hospital from '../images/hospital.jpg'
 

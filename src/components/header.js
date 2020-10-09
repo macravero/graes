@@ -7,10 +7,6 @@ import Logo from '../images/logo-graes.png'
 import LogoDesktop from '../images/logo-graes-desktop.png'
 
 const Header = () => {
-  let isMobile
-  if (typeof window !== `undefined`) {
-    isMobile = window.matchMedia('(max-width: 600px)').matches
-  }
   return (
     <header
       style={{
@@ -28,10 +24,10 @@ const Header = () => {
           alignItems: 'center',
         }}
       >
-        {isMobile && <Link to ='/'><img src={Logo} alt='Graes logo' style={{maxWidth: '100px', margin: '0'}} /></Link>}
-        {!isMobile && <Link to ='/'><img src={LogoDesktop} alt='Graes logo' style={{maxWidth: '100%', margin: '0'}} /></Link>}
-        {!isMobile && <DesktopNav />}
-        {isMobile && <MobileNav />}
+        <Link to ='/'><img src={Logo} alt='Graes logo' className="mobileLogo" style={{maxWidth: '100px', margin: '0'}} /></Link>
+        <Link to ='/'><img src={LogoDesktop} alt='Graes logo' className="desktopLogo" style={{maxWidth: '100%', margin: '0'}} /></Link>
+        <DesktopNav />
+        <MobileNav />
       </div>
     </header>
   )

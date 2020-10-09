@@ -1,6 +1,5 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
-import styles from './aliados.module.scss'
 import SlideOne from '../../images/aliados/aliados1.png'
 import SlideTwo from '../../images/aliados/aliados2.png'
 import SlideThree from '../../images/aliados/aliados3.png'

@@ -5,7 +5,6 @@ import SEO from "../components/seo"
 import ContactoBanner from '../images/banner-contacto.jpg'
 import Contacto from '../images/contacto.png'
 import Direccion from '../images/direccion.png'
-import Telefono from '../images/telefono.png'
 
 const ContactoPage = () => {
   return (
