@@ -12,12 +12,12 @@ const MobileNav = () => {
       <span></span>
     </div>
       <ul className={styles.menu} style={toggled ? {transform: 'none'} : null}>
-        <Link className={styles.link}to="/nosotros"><li>¿Quiénes somos?</li></Link>
-        <Link className={styles.link}to="/causas"><li>Nuestras causas</li></Link>
-        <Link className={styles.link}to="/servicios"><li>Nuestros servicios</li></Link>
-        <Link className={styles.link}to="/covid19"><li>respuesta covid-19</li></Link>
-        <Link className={styles.link}to="/trayectoria"><li>alcance y trayectoria</li></Link>
-        <Link className={styles.link}to="/contacto"><li>contacto</li></Link>
+        <Link className={styles.link}to="/nosotros" activeStyle={{ color: "#A60816" }}><li>¿Quiénes somos?</li></Link>
+        <Link className={styles.link}to="/causas" activeStyle={{ color: "#A60816" }}><li>Nuestras causas</li></Link>
+        <Link className={styles.link}to="/servicios" activeStyle={{ color: "#A60816" }}><li>Nuestros servicios</li></Link>
+        <Link className={styles.link}to="/covid19" activeStyle={{ color: "#A60816" }}><li>respuesta covid-19</li></Link>
+        <Link className={styles.link}to="/trayectoria" activeStyle={{ color: "#A60816" }}><li>alcance y trayectoria</li></Link>
+        <Link className={styles.link}to="/contacto" activeStyle={{ color: "#A60816" }}><li>contacto</li></Link>
       </ul>
     </div>
   )
