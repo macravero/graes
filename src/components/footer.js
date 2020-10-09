@@ -17,7 +17,6 @@ const Footer = () => {
       <div className={styles.infoContainer}>
         <p>Paseo de la Castellana 57</p>
         <p>(28057) Madrid, España.</p>
-        <p>91 870 00 00 / 91 800 00 00</p>
       </div>
     </footer>
   )

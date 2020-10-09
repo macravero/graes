@@ -33,9 +33,11 @@
 }
 .sectionOne{
   padding: 24px;
-  max-width: 1024px;
+  // max-width: 1024px;
+  width: 100%;
   margin: 0 auto;
-  background-image: url('../../images/index-bg.jpg');
+  background: url('../../images/index-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
   padding-bottom: 4rem;
   & img{
     margin: 0;
@@ -260,5 +262,113 @@
   }
   & img{
     max-width: 40px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    .sectionOne{
+      padding: 36px 200px;
+      min-height: 22rem;
+      order: 1;
+      & img{
+        margin: 24px 0;
+        width: 50px;
+      }
+    }
+    .sectionTwo{
+      width: 50%;
+      margin: 0;
+      order: 2;
+      padding: 36px;
+      & h2{
+        font-size: 25px;
+      }
+      & img{
+        max-width: 75px;
+      }
+      & .link{
+        width: 260px;
+        border: 2px solid #A60816;
+        background-color: white;
+        color: #A60816;
+        &:hover{
+          color:white;
+          background-color: #A60816;
+        }
+      }
+    }
+    .sectionThree{
+      width: 50%;
+      order: 3;
+      & h2{
+        font-size: 25px;
+      }
+      & img{
+        max-width: 75px;
+      }
+    }
+    .sectionFour{
+      width: 50%;
+      order: 5;
+      padding: 36px;
+      padding-top: 6rem;
+      & h2{
+        font-size: 25px;
+      }
+      & img{
+        max-width: 75px;
+      }
+      & p{
+        flex-grow: 1;
+      }
+      & .link{
+        width: 260px;
+      }
+    }
+    .sectionFive{
+      width: 50%;
+      order: 4;
+      padding: 36px;
+      & h2{
+        font-size: 25px;
+      }
+      & img{
+        max-width: 75px;
+      }
+      & .link{
+        width: 260px;
+      }
+    }
+    .sectionSix{
+      width: 50%;
+      order: 6;
+      margin: 0;
+      border: none;
+      padding: 36px;
+      & h2{
+        font-size: 25px;
+      }
+      & img{
+        max-width: 75px;
+      }
+      & .link{
+        width: 260px;
+      }
+    }
+    .respuestaCovidFull{
+      width: 50%;
+      order: 7;
+    }
+    & p{
+      font-size: 18px;
+      line-height: 36px;
+    }
+    & h1{
+      padding: 0 33%;
+      font-size: 25px;
+      line-height: 50px;
+    }
   }
 }

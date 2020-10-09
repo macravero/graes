@@ -52,7 +52,7 @@ const IndexPage = () => (
         <p>El abordaje de proyectos abarca desde las fases tempranas de diagnóstico y prevención en contextos de Emergencias, a las etapas de contención temprana y respuesta para atender Crisis en desarrollo. Proporcionamos a nuestros clientes, los modelos y herramientas necesarias para la gestión de este tipo de proyectos en todas sus etapas.</p>
         <Link to='/' className={styles.link}>VER TODOS</Link>
       </div>
-      <img src={RespuestaCovidFondo} alt="Respuesta COVID"/>
+      <img src={RespuestaCovidFondo} alt="Respuesta COVID" className={styles.respuestaCovidFull}/>
       <div className={styles.sectionSix}>
         <img src={RespuestaCovid} alt="Respuesta COVID"/>
         <h2>RESPUESTA ANTE COVID 19</h2>
