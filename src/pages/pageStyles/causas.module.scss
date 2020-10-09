@@ -92,3 +92,73 @@
 .cardContainer:last-child{
   margin-bottom: 0;
 }
+@media only screen and (min-width: 600px) {
+  .container{
+    & > img{
+      width: 100%;
+    }
+    .section.dark{
+      display: flex;
+      flex-direction: column;
+      min-height: 24rem;
+      padding: 0px 15%;
+      align-items: center;
+      justify-content: center;
+      & img{
+        margin: 0;
+        margin-bottom: 2rem;
+      }
+      & h2{
+        margin: 0;
+        margin-bottom: 2rem;
+      }
+    }
+    .section{
+      padding: 0 12px;
+      padding-bottom: 3rem;
+      flex-direction: row;
+      flex-wrap: wrap;
+      & h2{
+        font-size: 25px;
+      }
+      & p:first-child{
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+      }
+      & p{
+        font-size: 18px;
+        line-height: 36px;
+      }
+      & a{
+        font-size: 18px;
+        & span{
+          font-size: 16px;
+        }
+      }
+      & ul{
+        font-size: 18px;
+        line-height: 36px;
+      }
+      & > div{
+        width: 30%;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        min-height: 36rem;
+        margin: 12px;
+        & > img{
+          padding-bottom: 1rem;
+        }
+      }
+      & img{
+        margin: 0;
+      }
+    }
+    & img.posterImage{
+      width: 100%;
+    }
+  }
+}
