@@ -28,7 +28,8 @@ const Header = () => {
           alignItems: 'center',
         }}
       >
-        <Link to ='/'><img src={isMobile ? Logo : LogoDesktop} alt='Graes logo' style={{maxWidth: isMobile ? '100px' : '100%', margin: '0'}} /></Link>
+        {isMobile && <Link to ='/'><img src={Logo} alt='Graes logo' style={{maxWidth: '100px', margin: '0'}} /></Link>}
+        {!isMobile && <Link to ='/'><img src={LogoDesktop} alt='Graes logo' style={{maxWidth: '100%', margin: '0'}} /></Link>}
         {!isMobile && <DesktopNav />}
         {isMobile && <MobileNav />}
       </div>
