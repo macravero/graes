@@ -4,6 +4,7 @@ import React from "react"
 import MobileNav from './mobile/mobileNavbar'
 import DesktopNav from './desktopNav';
 import Logo from '../images/logo-graes.png'
+import LogoDesktop from '../images/logo-graes-desktop.png'
 
 const Header = () => {
   let isMobile
@@ -27,7 +28,7 @@ const Header = () => {
           alignItems: 'center',
         }}
       >
-        <Link to ='/'><img src={Logo} alt='Graes logo' style={{maxWidth: '100px', margin: '0'}} /></Link>
+        <Link to ='/'><img src={isMobile ? Logo : LogoDesktop} alt='Graes logo' style={{maxWidth: isMobile ? '100px' : '100%', margin: '0'}} /></Link>
         {!isMobile && <DesktopNav />}
         {isMobile && <MobileNav />}
       </div>
