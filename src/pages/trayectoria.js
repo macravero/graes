@@ -7,7 +7,10 @@ import TrayectoriaBanner from '../images/banner-trayectoria.jpg'
 import Alcance from '../images/alcance.png'
 import Alianzas from '../images/alianzas.png'
 const TrayectoriaPage = () => {
-  const isMobile = window.matchMedia('(max-width: 600px)').matches
+  let isMobile
+  if (typeof window !== `undefined`) {
+    isMobile = window.matchMedia('(max-width: 600px)').matches
+  }
   return (
     <Layout>
       <SEO title="Home" />      

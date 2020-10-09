@@ -3,7 +3,10 @@ import AliadosCarousel from './Carousels/AliadosCarousel'
 import AliadosFull from '../images/aliados.png'
 
 const Aliados = () => {
-    let isMobile = window.matchMedia('(max-width: 600px)').matches
+    let isMobile
+    if (typeof window !== `undefined`) {
+      isMobile = window.matchMedia('(max-width: 600px)').matches
+    }
     return (
         <div style={{order: '10', width: '100%'}}>
             <p className="aliados-title">ALIADOS ESTRATÉGICOS</p>

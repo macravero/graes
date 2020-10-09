@@ -6,8 +6,10 @@ import DesktopNav from './desktopNav';
 import Logo from '../images/logo-graes.png'
 
 const Header = () => {
-  let isMobile = window.matchMedia('(max-width: 600px)').matches
-  
+  let isMobile
+  if (typeof window !== `undefined`) {
+    isMobile = window.matchMedia('(max-width: 600px)').matches
+  }
   return (
     <header
       style={{
