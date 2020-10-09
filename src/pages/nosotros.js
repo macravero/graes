@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import Aliados from '../components/aliados'
 import SEO from "../components/seo"
 import Nosotros from '../images/nosotros-header.jpg'
+import NosotrosDesktop from '../images/nosotros-desktop.jpg'
 import QuienesSomos from '../images/quienes-somos-gris.png'
 import Mision from '../images/mision.png'
 import Vision from '../images/vision.png'
@@ -20,7 +21,8 @@ const NosotrosPage = () => {
     <Layout>
       <SEO title="Quienes somos" />
       <div className={styles.container}>
-      <img src={Nosotros} alt="Nosotros"/>
+      <img src={Nosotros} alt="Nosotros" className="mobileOnly"/>
+      <img src={NosotrosDesktop} alt="Nosotros" className="desktopOnly"/>
       <div className={styles.section}>
         <div style={{order: '1'}}>
           <img src={QuienesSomos} alt="Quienes somos"/>

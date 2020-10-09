@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Aliados from '../components/aliados'
 import Objetivos from '../images/objetivos-header.jpg'
+import ObjetivosDesktop from '../images/objetivos-header-desktop.jpg'
 import Causas from '../images/causas-white.png'
 import Catastrofes from '../images/Catastrofes.jpg'
 import Migracion from '../images/migracion.jpg'
@@ -22,7 +23,8 @@ const CausasPage = () => {
     <Layout>
       <SEO title="Home" />
       <div className={styles.container}>
-      <img src={Objetivos} alt="Objetivos"/>
+      <img src={Objetivos} alt="Objetivos" className='mobileOnly'/>
+      <img src={ObjetivosDesktop} alt="Objetivos" className='desktopOnly'/>
       <div className={`${styles.section} ${styles.dark}`}>
         <img src={Causas} alt="Causas"/>
         <h2>NUESTRAS CAUSAS</h2>

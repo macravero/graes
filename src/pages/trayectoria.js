@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import Aliados from '../components/aliados'
 import SEO from "../components/seo"
 import TrayectoriaBanner from '../images/banner-trayectoria.jpg'
+import TrayectoriaBannerDesktop from '../images/banner-trayectoria-desktop.jpg'
 import Alcance from '../images/alcance.png'
 import Alianzas from '../images/alianzas.png'
 const TrayectoriaPage = () => {
@@ -15,7 +16,8 @@ const TrayectoriaPage = () => {
     <Layout>
       <SEO title="Home" />      
       <div className={styles.container}>
-      <img src={TrayectoriaBanner} alt="Trayectoria"/>
+      <img src={TrayectoriaBanner} alt="Trayectoria" className='mobileOnly'/>
+      <img src={TrayectoriaBannerDesktop} className='desktopOnly' alt="Trayectoria"/>
       <div className={styles.section}>
         <div>
           <img src={Alcance} alt="Alcance y Trayectoria"/>

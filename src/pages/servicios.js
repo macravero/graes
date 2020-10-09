@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Aliados from '../components/aliados'
 import NuestrosServiciosBanner from '../images/nuestros-servicios-banner.jpg'
+import NuestrosServiciosBannerDesktop from '../images/nuestros-servicios-banner-desktop.jpg'
 import NuestrosServicios from '../images/nuestros-servicios-red.png'
 import FabricacionTech from '../images/tecnologias.png'
 import DisenoProyectos from '../images/proyectos.png'
@@ -17,7 +18,8 @@ const ServiciosPage = () => {
     <Layout>
       <SEO title="Servicios" />
       <div className={styles.container}>
-      <img src={NuestrosServiciosBanner} alt="Nuestros Servicios"/>
+      <img src={NuestrosServiciosBanner} alt="Nuestros Servicios" className='mobileOnly'/>
+      <img src={NuestrosServiciosBannerDesktop} alt="Nuestros Servicios" className='desktopOnly'/>
       <div className={styles.section}>
         <div>
           <img src={NuestrosServicios} alt="Nuestros Servicios"/>

@@ -3,6 +3,7 @@ import styles from './pageStyles/contacto.module.scss'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ContactoBanner from '../images/banner-contacto.jpg'
+import ContactoBannerDesktop from '../images/banner-contacto-desktop.jpg'
 import Contacto from '../images/contacto.png'
 import Direccion from '../images/direccion.png'
 
@@ -11,7 +12,8 @@ const ContactoPage = () => {
     <Layout>
       <SEO title="Servicios" />
       <div className={styles.container}>
-      <img src={ContactoBanner} alt="Contacto"/>
+      <img src={ContactoBanner} alt="Contacto"className='mobileOnly'/>
+      <img src={ContactoBannerDesktop} alt="Contacto"className='desktopOnly'/>
       <div className={styles.section}>
         <img src={Contacto} alt="Contacto"/>
         <h2>CONTACTO</h2>

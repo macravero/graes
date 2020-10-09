@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HomeCarousel from '../components/Carousels/HomeCarousel'
+import DesktopHomeCarousel from '../components/Carousels/DesktopHomeCarousel'
 import Aliados from '../components/aliados'
 import styles from './pageStyles/index.module.scss'
 import QuienesSomos from '../images/quienes-somos.png'
@@ -15,10 +16,12 @@ import OpenQuote from '../images/abre-comas.png'
 import CloseQuote from '../images/cierre-comas.png'
 
 
-const IndexPage = () => (
+const IndexPage = () => {
+  return (
   <Layout>
     <SEO title="Home" />
-    <HomeCarousel />
+    <div className="mobileOnly"><HomeCarousel /></div>
+    <div className="desktopOnly"><DesktopHomeCarousel/></div>
     <div className={styles.container}>
       {/* First section */}
       <div className={styles.sectionOne}>
@@ -62,6 +65,7 @@ const IndexPage = () => (
       <Aliados/>
     </div>
   </Layout>
-)
+  )
+  }
 
 export default IndexPage

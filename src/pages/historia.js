@@ -6,6 +6,7 @@ import Aliados from '../components/aliados'
 import SEO from "../components/seo"
 import Historia from '../images/historia.png'
 import Hospital from '../images/hospital.jpg'
+import HospitalDesktop from '../images/hospital-desktop.jpg'
 import Carpa from '../images/carpa.png'
 
 const HistoriaPage = () => {
@@ -13,7 +14,8 @@ const HistoriaPage = () => {
     <Layout>
       <SEO title="Historia" />
       <div className={styles.container}>
-      <img src={Hospital} alt="Hospital"/>
+      <img src={Hospital} alt="Hospital" className='mobileOnly'/>
+      <img src={HospitalDesktop} alt="Hospital" className='desktopOnly'/>
       <div className={styles.section}>
         <img src={Historia} alt="Historia"/>
         <h2>NUESTRA HISTORIA</h2>

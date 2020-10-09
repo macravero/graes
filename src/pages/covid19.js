@@ -5,13 +5,15 @@ import SEO from "../components/seo"
 import Aliados from '../components/aliados'
 import CovidCarousel from '../components/Carousels/CovidCarousel'
 import CovidBanner from '../images/covid-banner.png'
+import CovidBannerDesktop from '../images/covid-banner-desktop.jpg'
 import RtaCovidLogo from '../images/respuesta-covid.png'
 const CovidResponsePage = () => {
   return (
     <Layout>
       <SEO title="Home" />
       <div className={styles.container}>
-      <img src={CovidBanner} alt="Respuesta Covid"/>
+      <img src={CovidBanner} alt="Respuesta Covid" className='mobileOnly'/>
+      <img src={CovidBannerDesktop} alt="Respuesta Covid" className='desktopOnly'/>
       <div className={`${styles.section} ${styles.firstSection}`}>
         <img src={RtaCovidLogo} alt="Respuesta a COVID"/>
         <h2>RESPUESTA ACTIVA ANTE COVID-19</h2>
