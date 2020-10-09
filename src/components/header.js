@@ -5,29 +5,33 @@ import MobileNav from './mobile/mobileNavbar'
 import DesktopNav from './desktopNav';
 import Logo from '../images/logo-graes.png'
 
-const Header = () => (
-  <header
-    style={{
-      background: `white`,
-    }}
-  >
-    <div
+const Header = () => {
+  let isMobile = window.matchMedia('(max-width: 600px)').matches
+  
+  return (
+    <header
       style={{
-        margin: `0 auto`,
-        maxWidth: 1600,
-        padding: `1rem 2.0875rem`,
-        position: 'relative',
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
+        background: `white`,
       }}
     >
-      <Link to ='/'><img src={Logo} alt='Graes logo' style={{maxWidth: '100px', margin: '0'}} /></Link>
-      {!window.matchMedia('(max-width: 600px)').matches && <DesktopNav />}
-      {window.matchMedia('(max-width: 600px)').matches && <MobileNav />}
-    </div>
-  </header>
-)
+      <div
+        style={{
+          margin: `0 auto`,
+          maxWidth: 1600,
+          padding: `1rem 2.0875rem`,
+          position: 'relative',
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+        }}
+      >
+        <Link to ='/'><img src={Logo} alt='Graes logo' style={{maxWidth: '100px', margin: '0'}} /></Link>
+        {!isMobile && <DesktopNav />}
+        {isMobile && <MobileNav />}
+      </div>
+    </header>
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
