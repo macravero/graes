@@ -4,7 +4,7 @@ import SlideOne from '../../images/carrusel-valencia.jpg'
 import SlideTwo from '../../images/carrusel-alicante.jpg'
 import SlideThree from '../../images/carrusel-castellon.jpg'
 export default () => (
-  <Carousel autoPlay showThumbs={false} showStatus={false} interval={4000} infiniteLoop>
+  <Carousel autoPlay showThumbs={false} showStatus={false} interval={4000} infiniteLoop className="covid-carousel">
     <div>
       <img alt="" src={SlideOne} />
     </div>

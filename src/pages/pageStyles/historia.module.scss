@@ -66,3 +66,42 @@
         max-width: 100%;
     }
 }
+@media only screen and (min-width: 600px) {
+  .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    & > img{
+      width: 100%;
+    }
+    & img.posterImage{
+      width: 48%;
+      margin-right: 24px;
+    }
+    & .section{
+      width: 50%;
+      & h2{
+        font-size: 25px;
+      }
+      & p{
+        font-size: 18px;
+        line-height: 36px;
+      }
+      & a{
+        font-size: 18px;
+        & span{
+          font-size: 16px;
+        }
+      }
+      & img{
+        margin: 0;
+        max-width: 75px;
+      }
+    }
+    & .section.lastSection{
+      width: 100%;
+      margin-bottom: 3rem;
+      margin-top: 2rem;
+    }
+  }
+}

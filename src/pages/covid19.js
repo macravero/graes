@@ -12,7 +12,7 @@ const CovidResponsePage = () => {
       <SEO title="Home" />
       <div className={styles.container}>
       <img src={CovidBanner} alt="Respuesta Covid"/>
-      <div className={styles.section}>
+      <div className={`${styles.section} ${styles.firstSection}`}>
         <img src={RtaCovidLogo} alt="Respuesta a COVID"/>
         <h2>RESPUESTA ACTIVA ANTE COVID-19</h2>
         <p>GRAES ha asistido en la respuesta ante el COVID-19 de
@@ -29,16 +29,26 @@ const CovidResponsePage = () => {
         <p className={styles.important}> - Y lo hicimos en tan solo 17 días - </p>
       </div>
       <h2>Localización de Hospitales</h2>
-      <CovidCarousel/>
+      <div className={styles.carouselContainer}>
+        <CovidCarousel/>
+      </div>
       <div className={styles.section}>
-        <h2>Construcción Hospital de Campaña junto al Hospital La Fe de Valencia</h2>
-        <iframe title='hospital campaña' width="560" height="315" src="https://www.youtube.com/embed/25PdIOi8294" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <h2>Montaje Hospital de Campaña junto al Hospital La Fe en Valencia</h2>
-        <iframe title='hospital montaje' width="560" height="315" src="https://www.youtube.com/embed/yJqj24wBB5A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <h2>Hospital de Campaña junto al Hospital La Fe</h2>
-        <iframe title='hospital junto a la fe 1' width="560" height="315" src="https://www.youtube.com/embed/cJy_Pp8dBH8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <h2>Hospital de Campaña junto al Hospital La Fe</h2>
-        <iframe title='hospital junto a la fe 2' width="560" height="315" src="https://www.youtube.com/embed/7a_wllHV1lQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div>
+          <h2>Construcción Hospital de Campaña junto al Hospital La Fe de Valencia</h2>
+          <iframe title='hospital campaña' width="560" height="315" src="https://www.youtube.com/embed/25PdIOi8294" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div>
+          <h2>Montaje Hospital de Campaña junto al Hospital La Fe en Valencia</h2>
+          <iframe title='hospital montaje' width="560" height="315" src="https://www.youtube.com/embed/yJqj24wBB5A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div>
+          <h2>Hospital de Campaña junto al Hospital La Fe</h2>
+          <iframe title='hospital junto a la fe 1' width="560" height="315" src="https://www.youtube.com/embed/cJy_Pp8dBH8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div>
+          <h2>Hospital de Campaña junto al Hospital La Fe</h2>
+          <iframe title='hospital junto a la fe 2' width="560" height="315" src="https://www.youtube.com/embed/7a_wllHV1lQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
       </div>
       <Aliados/>
     </div>
